@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <!-- Materialize Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Materialize Icon Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery Minified JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Materialize Minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js" integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Override Materialize CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col s12 centered_icons">
+            <i class="material-icons">wallpaper</i>
+            <i class="material-icons">brightness_4</i>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h3>
+                    Card
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="0.png" alt="A poster of a space rocket.">
+                                    <span class="card-title">Image Card</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        This just contains an image and some info.
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="">Use this card</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="1.png" alt="A poster of a space rocket.">
+                                    <span class="card-title">FAB Card</span>
+                                    <a href="" class="btn-floating halfway-fab waves-effect waves-light">
+                                        <i class="material-icons">add</i>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        This contains an image, FAB, and some info.
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="">Use this card</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img src="2.png" alt="A space rocket poster." class="activator">
+                                    <span class="card-title">Reveal Card</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        This contains an image and some hidden info.
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="">Use this card</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title">Reveal Card<i class="material-icons right">close</i></span>
+                                    <p>
+                                        This card reveals more information once clicked.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="container" id="credit_link">
+                    <a href="https://www.freepik.com/vectors/background">Background vector created by upklyak - www.freepik.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

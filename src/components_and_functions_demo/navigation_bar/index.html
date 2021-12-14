@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <!-- Materialize Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Materialize Icon Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery Minified JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Materialize Minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js" integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Override Materialize CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col s12 centered_icons">
+            <i class="material-icons">list</i>
+            <i class="material-icons">code</i>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h3>
+                    Navigation Bar
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with right-aligned items and left-aligned logo</h5>
+                            <p>
+                                This navigation bar has its items aligned on right side and its logo on left side. It automatically hides the items once the viewport shrinks and reaches a certain width.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>nav-wrapper</i></td><td>Makes a container for navigation bar that has responsive margin and padding.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>left</i> | <i>right</i></td><td>Align items to left; and to right.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>hide-on-med-and-down</i></td><td>Hides the items in tablet size or below.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>brand-logo</i></td><td>Makes a brand logo.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6" id="code_example">
+                                        <h6 class="center-align" id="code_example_header">Code</h6>
+                                        <pre>
+                                            <code><!-- 4 non-breaking spaces = 1 tab --><!-- &#13;&#10; = \n -->
+&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;NavBar&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo">NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with left-aligned items and right-aligned logo</h5>
+                            <p>
+                                This navigation bar has its items aligned on left side and its logo on right side.
+                            </p>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo right">NavBar</a>
+                                    <ul class="left hide-on-med-and-down">
+                                        <li><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with right-aligned items and centered logo</h5>
+                            <p>
+                                This navigation bar has its items aligned on right side and its logo on center.
+                            </p>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo center">NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with left-aligned items and centered logo</h5>
+                            <p>
+                                This navigation bar has its items aligned on left side and its logo on center.
+                            </p>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo center">NavBar</a>
+                                    <ul class="left hide-on-med-and-down">
+                                        <li><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with left and right-aligned items and centered logo</h5>
+                            <p>
+                                This navigation bar has its items aligned on left and right side, and its logo on center.
+                            </p>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo center">NavBar</a>
+                                    <ul class="left hide-on-med-and-down">
+                                        <li><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                    </ul>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with an active item</h5>
+                            <p>
+                                This navigation bar has an active item, indicating that it is the current page.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>active</i></td><td>Sets an item look active.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6" id="code_example">
+                                        <h6 class="center-align" id="code_example_header">Code</h6>
+                                        <pre>
+                                            <code><!-- 4 non-breaking spaces = 1 tab --><!-- &#13;&#10; = \n -->
+&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;NavBar&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="active"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo">NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li class="active"><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Extended navigation bar with tabs</h5>
+                            <p>
+                                This is an extended navigation bar, and it has tab components.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>nav-extended</i></td><td>It extends the navigation bar downwards.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6" id="code_example">
+                                        <h6 class="center-align" id="code_example_header">Code</h6>
+                                        <pre>
+                                            <code><!-- 4 non-breaking spaces = 1 tab --><!-- &#13;&#10; = \n -->
+&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;NavBar&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="active"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-content"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="tabs tabs-transparent hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="tab"&gt;&lt;a href="" class="active"&gt;Date and Time Input Picker&lt;/a&gt;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+
+                            <nav class="nav-extended navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo">NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li class="active"><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-content">
+                                    <ul class="tabs tabs-transparent hide-on-med-and-down">
+                                        <li class="tab"><a href="" class="active">Date and Time Input Picker</a></li>
+                                        <li class="tab"><a href="">Cards</a></li>
+                                        <li class="tab"><a href="">Parallax</a></li>
+                                        <li class="tab"><a href="">Pagination</a></li>
+                                        <li class="tab"><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Fixed Navbar</h5>
+                            <p>
+                                This is a fixed navigation bar that was made possible by setting a <i>navbar-fixed</i> class to the outer wrapping div.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>navbar-fixed</i></td><td>Makes the navigation bar fixed.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6" id="code_example">
+                                        <h6 class="center-align" id="code_example_header">Code</h6>
+                                        <pre>
+                                            <code><!-- 4 non-breaking spaces = 1 tab --><!-- &#13;&#10; = \n -->
+&lt;div class="navbar-fixed"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;NavBar&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;&#13;&#10;&lt;/div&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+
+                            <div class="navbar-fixed">
+                                <nav >
+                                    <div class="nav-wrapper">
+                                        <a href="" class="brand-logo">NavBar</a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a href="">Date and Time Input Picker</a></li>
+                                            <li><a href="">Cards</a></li>
+                                            <li><a href="">Parallax</a></li>
+                                            <li><a href="">Pagination</a></li>
+                                            <li><a href="">Preloader</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <blockquote>
+                                <p>
+                                    I can't make it work, so it will be 'under construction' for now.
+                                </p>
+                            </blockquote>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="dropdown-content" id="dropdown_elements">
+                            <li><a href="">Date and Time Input Picker</a></li>
+                            <li><a href="">Cards</a></li>
+                            <li><a href="">Parallax</a></li>
+                            <li><a href="">Pagination</a></li>
+                            <li><a href="">Preloader</a></li>
+                        </ul>
+                        <blockquote>
+                            <h5>Navigation bar with dropdown menu</h5>
+                            <p>
+                                This navigation bar uses a dropdown compinent to include a popping menu.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>dropdown-content</i></td><td>The dropdown menu to be called and displayed.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>dropdown-trigger</i></td><td>Acts like a button, but it calls a dropdown menu.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6" id="code_example">
+                                        <h6 class="center-align" id="code_example_header">Code</h6>
+                                        <pre>
+                                            <code><!-- 4 non-breaking spaces = 1 tab --><!-- &#13;&#10; = \n -->
+&lt;ul class="dropdown-content" id="dropdown_elements"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&lt;/ul&gt;&#13;&#10;&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;NavBar&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="dropdown-trigger" id="dropdown_button" data-target="dropdown_elements"&gt;Items Menu&lt;i class="material-icons right"&gt;arrow_drop_down&lt;/i&gt;&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo">NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href="" class="dropdown-trigger" id="dropdown_button" data-target="dropdown_elements">Items Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with icon links</h5>
+                            <p>
+                                This navigation bar has icons as its items.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>material-icons</i></td><td>Makes an icon.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6" id="code_example">
+                                        <h6 class="center-align" id="code_example_header">Code</h6>
+                                        <pre>
+                                            <code><!-- 4 non-breaking spaces = 1 tab --><!-- &#13;&#10; = \n -->
+&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;list&lt;/i&gt;NavBar&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;calendar_month&lt;/i&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo"><i class="material-icons">list</i>NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href=""><i class="material-icons">calendar_month</i></a></li>
+                                        <li><a href=""><i class="material-icons">view_carousel</i></a></li>
+                                        <li><a href=""><i class="material-icons">wallpaper</i></a></li>
+                                        <li><a href=""><i class="material-icons">auto_stories</i></a></li>
+                                        <li><a href=""><i class="material-icons">rotate_right</i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with icon on texts</h5>
+                            <p>
+                                This navigation bar has icons beside its items' texts.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    You can add <i>left</i> or <i>right</i> to adjust the position of the icon to a text.
+                                </p>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo"><i class="material-icons">list</i>NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href=""><i class="material-icons left">calendar_month</i>Date and Time Input Picker</a></li>
+                                        <li><a href=""><i class="material-icons">view_carousel</i></a></li>
+                                        <li><a href=""><i class="material-icons">wallpaper</i></a></li>
+                                        <li><a href=""><i class="material-icons">auto_stories</i></a></li>
+                                        <li><a href=""><i class="material-icons">rotate_right</i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with buttons</h5>
+                            <p>
+                                This navigation bar has buttons as its items.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>btn</i></td><td>Makes a button.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>waves-effect</i></td><td>Adds wave effects when the button is clicked.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>waves-light</i></td><td>Adds a default light color to the wave effect.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo"><i class="material-icons">list</i>NavBar</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a class="waves-effect waves-light btn"><i class="material-icons left">calendar_month</i>Date and Time Input Picker</a></li>
+                                        <li><a class="waves-effect waves-light btn-large"><i class="material-icons right">dashboard</i>Items Menu</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Navigation bar with a floating action button (FAB)</h5>
+                            <p>
+                                This navigation bar has a FAB.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>btn-floating</i></td><td>Makes a floating circle button.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>halfway-fab</i></td><td>Place the button halfway on the navigation bar.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo"><i class="material-icons">list</i>NavBar</a>
+                                    <a href="" class="btn-floating btn-large halfway-fab waves-effect waves-light hide-on-med-and-down"><i class="material-icons">view_carousel</i></a>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Search bar</h5>
+                            <p>
+                                This is a search bar.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>input-field</i></td><td>Makes a field for input.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>label-icon</i></td><td>Makes the label suitable for icons.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6">
+                                        <pre>
+                                            <code id="code_example">
+&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="input-field"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" id="search" required&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="search" class="label-icon"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;search&lt;/i&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;close&lt;/i&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <form>
+                                        <div class="input-field">
+                                            <input type="search" id="search" required>
+                                            <label for="search" class="label-icon"><i class="material-icons">search</i></label>
+                                            <i class="material-icons">close</i>
+                                        </div>
+                                    </form>
+                                </div>
+                            </nav>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <blockquote>
+                            <h5>Mobile Collapse Button</h5>
+                            <p>
+                                A collapse button, in <i>hamburger icon</i>, will appear if the screen size becomes small enough to be considered as a mobile device.
+                            </p>
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <table>
+                                            <tr>
+                                                <th>Class</th><th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i>input-field</i></td><td>Makes a field for input.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>label-icon</i></td><td>Makes the label suitable for icons.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col s6">
+                                        <pre>
+                                            <code id="code_example">
+&lt;nav&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nav-wrapper"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="brand-logo"&gt;NavBar&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" data-targe"mobile_form" class="sidenav-trigger"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;menu&lt;/i&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="right hide-on-med-and-down"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;/nav&gt;&#13;&#10;&lt;ul class="sidenav" id="mobile_form"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Date and Time Input Picker&lt;/a&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;...&#13;&#10;&lt;/ul&gt;</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </blockquote>
+                            <nav class="navigation_base">
+                                <div class="nav-wrapper">
+                                    <a href="" class="brand-logo"><i class="material-icons left">list</i>NavBar</a>
+                                    <a href="" data-target="mobile_form" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href="">Date and Time Input Picker</a></li>
+                                        <li><a href="">Cards</a></li>
+                                        <li><a href="">Parallax</a></li>
+                                        <li><a href="">Pagination</a></li>
+                                        <li><a href="">Preloader</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <ul class="sidenav" id="mobile_form">
+                                <li><a href="">Date and Time Input Picker</a></li>
+                                <li><a href="">Cards</a></li>
+                                <li><a href="">Parallax</a></li>
+                                <li><a href="">Pagination</a></li>
+                                <li><a href="">Preloader</a></li>
+                            </ul>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    background: #da4453;  /* Fallback */
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216b, #da4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+blockquote {
+    padding: 20px;
+    border-left: 4px solid rgba(255, 255, 255, 0.200);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.200);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.083);
+}
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+    background: #da4453;
+    background: -webkit-linear-gradient(to bottom, #89216b, #da4453); 
+    background: linear-gradient(to bottom, #89216b, #da4453);
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    background: -webkit-linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.864), transparent); 
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.864), transparent);
+}
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.083);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.207);
+}
+.container h3, h5, p, i {
+    color: white;
+}
+.dropdown-content {
+    border-radius: 10px;
+}
+.dropdown-content li a {
+    color: #89216b;
+}
+/* These 3 classes were also difficult to find */
+/* Also, I just knew that line is colored with stroke attribute, not fill as it's only for shapes */
+.timepicker-modal .timepicker-container .timepicker-analog-display .timepicker-plate .timepicker-canvas .timepicker-svg g .timepicker-canvas-bg {
+    fill: #da4453;
+}
+.timepicker-modal .timepicker-container .timepicker-analog-display .timepicker-plate .timepicker-canvas .timepicker-svg g .timepicker-canvas-bearing {
+    fill: #da4453;
+}
+.timepicker-modal .timepicker-container .timepicker-analog-display .timepicker-plate .timepicker-canvas .timepicker-svg g line {
+    stroke: #da4453;
+}
+.timepicker-modal .timepicker-container .timepicker-analog-display .timepicker-plate .timepicker-footer .confirmation-btns .timepicker-close {
+    color: #89216b !important;
+}
+.timepicker-modal .timepicker-container {
+    border-radius: 10px;
+}
+.datepicker-modal {
+    border-radius: 20px;
+}
+.datepicker-modal .datepicker-container .datepicker-date-display {
+    background: #da4453;
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);
+    background: linear-gradient(to right, #89216b, #da4453);
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-table-wrapper .datepicker-table .datepicker-row .is-selected {
+    background: #da4453;
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);
+    background: linear-gradient(to right, #89216b, #da4453);
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-table-wrapper .datepicker-table .datepicker-row .is-selected:hover {
+    background: #a72d84;
+    background: -webkit-linear-gradient(to right, #a72d84, #f15362);
+    background: linear-gradient(to right, #a72d84, #f15362);
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-table-wrapper .datepicker-table .datepicker-row .is-today .datepicker-day-button {
+    font-weight: 900;
+    color: #a72d84;
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-footer .datepicker-clear {
+    color: #a72d84;
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-footer .confirmation-btns .datepicker-cancel,
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-footer .confirmation-btns .datepicker-done {
+    color: #da4453;
+}
+/* Took me a long time to look for these 2 classes */
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-controls .month-next,
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-controls .month-prev {
+    border-radius: 10px;
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-controls .month-next:active {
+    background-color: #da4453;
+}
+.datepicker-modal .datepicker-container .datepicker-calendar-container .datepicker-calendar .datepicker-controls .month-prev:active {
+    background-color: #a72d84;
+}
+.timepicker-modal .timepicker-container .timepicker-digital-display {
+    background: #da4453;
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);
+    background: linear-gradient(to right, #89216b, #da4453);
+}
+.btn {
+    width: 100%;
+    border-radius: 10px;
+    background: #da4453;
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);
+    background: linear-gradient(to right, #89216b, #da4453);
+}
+.btn:hover {
+    background: #a72d84;
+    background: -webkit-linear-gradient(to right, #a72d84, #f15362);
+    background: linear-gradient(to right, #a72d84, #f15362);
+}
+.centered_icons {
+    text-align: center;
+}
+i.prefix.active {
+    color: white !important;
+}
+#date_input_picker_field {
+    color: white;
+}
+#date_input_picker_field:focus + label {
+    color: white;
+}
+#date_input_picker_field:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+#time_input_picker_field {
+    color: white;
+}
+#time_input_picker_field:focus + label {
+    color: white;
+}
+#time_input_picker_field:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}

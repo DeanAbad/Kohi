@@ -1,0 +1,31 @@
+#carousel_container {
+    height: 90vh;
+}
+#preloader_container {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #da4453;
+    background: -webkit-gradient(linear, left top, right top, from(#89216b), to(#da4453));
+    background: linear-gradient(to right, #89216b, #da4453);
+    transition: 1s 0.4s;
+}
+#preloader_container #preloader {
+    position: absolute;
+    top: 45vh;
+    left: 45vw;
+}
+#preloader_container #preloader .spinner-layer .circle-clipper .circle {
+    border-color: white;
+}
+#page_indicator_row #page_indicator_column {
+    background: transparent;
+    position: fixed;
+    z-index: 2;
+}
+.pagination li {
+    border-radius: 10px;
+}

@@ -1,0 +1,56 @@
+body {
+    background: #da4453;  /* Fallback */
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216b, #da4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+blockquote {
+    padding: 20px;
+    border-left: 4px solid rgba(255, 255, 255, 0.200);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.200);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.083);
+}
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.083);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.207);
+}
+.container .col i, .container .row .col h3 {
+    color: white;
+}
+.centered_icons {
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+    background: #da4453;
+    background: -webkit-linear-gradient(to bottom, #89216b, #da4453); 
+    background: linear-gradient(to bottom, #89216b, #da4453);
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    background: -webkit-linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.864), transparent); 
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.864), transparent);
+}
+#credit_link {
+    text-align: center;
+}
+#credit_link a {
+    color: white;
+}
+.btn-floating {
+    background: #da4453;
+    background: -webkit-linear-gradient(to right, #89216b, #da4453);
+    background: linear-gradient(to right, #89216b, #da4453);
+}
+.card-action a {
+    color: #89216b !important;
+}
+.card:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.494);
+}

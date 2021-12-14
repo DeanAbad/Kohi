@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time Input Picker</title>
+    <!-- Materialize Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Materialize Icon Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery Minified JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Materialize Minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js" integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Override Materialize CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col s12 centered_icons">
+            <i class="material-icons">calendar_month</i>
+            <i class="material-icons">schedule</i>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h3>
+                    Date and Time Input Picker
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <blockquote>
+                    <h5>Date</h5>
+                    <div class="divider"></div>
+                    <p>
+                        Enter date in the field by clicking on it, and picking the date via the popup widget.<br>
+                        You can also check if there are events in that date by clicking on Events button.<br>
+                    </p>
+                    <blockquote>
+                        <p>
+                            <b>Note:</b> Event list will not show up if the field is blank, but after filling it once it will.<br>
+                            To manually input a date, click above the area of the field.
+                        </p>
+                    </blockquote>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">calendar_month</i>
+                                <input type="text" class="datepicker" id="date_input_picker_field">
+                                <label for="date_input_picker_field">Date (mm/dd/yyyy)</label>
+                            </div>
+                            <div class="col s4">
+                                <!-- Dropdown Trigger -->
+                                <a class="dropdown-trigger btn" id="special_events_dropdown" href="#" data-target="special_events_list">Events</a>
+                                <!-- Dropdown Structure -->
+                                <ul class="dropdown-content" id="special_events_list"></ul>
+                            </div>
+                        </div>
+                    </form>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <blockquote>
+                    <h5>Time</h5>
+                    <div class="divider"></div>
+                    <p>
+                        Enter time in the field by clicking on it, and picking the time via the popup widget.<br>
+                        You may toggle the format of time between 12 and 24-hour format by clicking the toggle button.
+                    </p>
+                    <blockquote>
+                        <p>
+                            <b>Note:</b> To manually input a time, click above the area of the field.
+                        </p>
+                    </blockquote>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">schedule</i>
+                                <input type="text" class="timepicker" id="time_input_picker_field">
+                                <label for="time_input_picker_field">Time (hr:min)</label>
+                            </div>
+                            <div class="col s4">
+                                <a class="waves-effect waves-light btn" id="time_format_toggle_button"></a>
+                            </div>
+                        </div>
+                    </form>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
