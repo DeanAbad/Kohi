@@ -17,9 +17,14 @@ These are the sections which buttons are not linked yet:
 - There is no an <i>About</i> section in the webpages, and it will tend to cause confusion to the visitors.
 
 ### Goals
-- With that being said, the following should be applied:
-  - [ ] Provide links for the buttons.
-  - [ ] Add About section
-  - [ ] Make a whole new app which combines all the functions and components of Materialize CSS, i.e. it
-  does not only showcase the aforementioned, but provides a demo of <b>what it can do</b>. This whole new
-  app would be included in a webpage together with its link.
+With that being said, the following should be applied:
+- [ ] Provide links for the buttons.
+- [ ] Add About section
+- [ ] Make a whole new app which combines all the functions and components of Materialize CSS, i.e. it does
+not only showcase the aforementioned, but provides a demo of <b>what it can do</b>. This whole new app would
+be included in a webpage together with its link.
+
+### Name
+- It got its name from coffee, i.e. on how Japanese pronounce it as 'ko-hi' (<a title="Listen to it here" href="https://www.google.com/search?q=coffee+pronounciation+in+japanese">コーヒー</a>).
+- Also, it is titled to coffee because I thought it was fitting considering that it is associated by a lot of
+people in programming, and that <b>it is easy to pronounce and remember, and is simple-looking</b>.
