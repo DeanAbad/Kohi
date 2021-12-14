@@ -26,15 +26,13 @@
   border-color: white;
 }
 
-#page_indicator_row {
-  background: #da4453;
-  background: -webkit-gradient(linear, left top, right top, from(#89216b), to(#da4453));
-  background: linear-gradient(to right, #89216b, #da4453);
-}
-
 #page_indicator_row #page_indicator_column {
   background: transparent;
   position: fixed;
   z-index: 2;
+}
+
+.pagination li {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
