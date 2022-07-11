@@ -1,5 +1,5 @@
 # Kohi
-A website project made with Materialize framework and VanillaJS. https://mumunimochii.github.io/Kohi/
+A website project made with Materialize framework and VanillaJS. https://deanabad.github.io/Kohi/
 
 ## About
 This work showcases the capabilities of Materialize CSS for making the frontend of an application i.e.
